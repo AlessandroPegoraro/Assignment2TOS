@@ -12,4 +12,5 @@ jdk: openjdk8
     directories:
       - $HOME/.m2
   script:
+    - cd restaurant-manager
     - mvn clean install
