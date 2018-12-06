@@ -78,6 +78,7 @@
                             </rule>
                         </rules>
                     </configuration>   
+                </executions>
             </plugin>
         </plugins>
     </build>
