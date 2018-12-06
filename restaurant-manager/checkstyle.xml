@@ -37,9 +37,7 @@
     		<property name="allowStaticMemberImports" value="true"/>
     	</module>
     	<module name="IllegalImport"/>
-    	<module name="NeedBraces">
-    		<property name="allowEmptyLoopBody" value="true"/>
-    	</module>
+    	<module name="NeedBraces"/>
     </module>
 </module>
 
