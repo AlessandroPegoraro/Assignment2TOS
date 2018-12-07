@@ -11,5 +11,4 @@ message=error;
 public String getMessage() {
 return message;
 }
-	
 }
