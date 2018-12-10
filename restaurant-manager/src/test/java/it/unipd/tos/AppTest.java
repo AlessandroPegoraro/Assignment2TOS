@@ -33,7 +33,7 @@ public class AppTest
 
     public void SumOfPrice_EmptyList_Expected0()
     {
-	assert(true):
+	assert(true);
         //fail("Not yet implemented");
     }
 /*
