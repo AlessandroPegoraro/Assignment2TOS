@@ -3,14 +3,46 @@
 ////////////////////////////////////////////////////////////////////
 package it.unipd.tos;
 
-/**
- * Hello world!
- *
- */
-public class App 
+public class App implements RestaurantBill
 {
-    public static void main( String[] args )
+    @Override
+    public double getOrderPrice(List<MenuItem> itemsOrdered) throws RestaurantBillException
     {
-        System.out.println( "Hello World!" );
+	if(itemsOrdered.size()>20)
+        {
+             throw new RestaurantBillException("Numero di Ordinazioni maggiore di 20 Elementi");
+        }
+        private int sumPizze=0;
+	private double minPrice=-1.0;
+	for(int i:itemsOrdered.size())
+        {
+        	if(itemsOrdered.get(i).getType()=0)
+            	{
+                	sumPizze++;
+			if(itemsOrdered.get(i).getPrice()<minPrice || minPrice<0.0)
+                        {
+				minPrice=itemsOrdered.get(i).getPrice;
+                        }
+		}
+        }
+	private double totalPrice=0.0;
+        for(int i:itemsOrdered.size())
+        {
+		if(sumPizze>10 && itemsOrdered.get(i).getType()=0)
+		{
+			if(itemsOrdered.get(i).getPrice()!=minPrice)
+			{
+				totalPrice+=itemsOrdered.get(i).getPrice();
+			}
+		}else
+		{
+			totalPrice+=itemsOrdered.get(i).getPrice();
+		}
+	}
+	if(totalPrice>100.0)
+	{
+		totalPrice*=0.95;
+	}
+	return totalPrice;
     }
 }
