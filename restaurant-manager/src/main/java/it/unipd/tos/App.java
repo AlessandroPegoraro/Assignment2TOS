@@ -19,7 +19,7 @@ int sumPizze=0;
 double minPrice=-1.0;
 for(int i=0;i<itemsOrdered.size();i++)
 {
-if(itemsOrdered.get(i).getType()!=MenuItem.itemType.Primo)
+if(itemsOrdered.get(i).getType()==MenuItem.itemType.Pizza)
 {
 sumPizze++;
 if(itemsOrdered.get(i).getPrice()<minPrice || minPrice<0.0)
