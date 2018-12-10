@@ -4,9 +4,11 @@
 package it.unipd.tos;
 
 import org.junit.Test;
+import org.junit.framework.TestCase;
+import org.junit.framework.TestSuite;
 //import junit.framework.Test; non riconosce @Test
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+//import junit.framework.TestCase;
+//import junit.framework.TestSuite;
 
 /**
  * Unit test for simple App.
