@@ -30,7 +30,7 @@ public class AppTest {
     {
     	try{
     		ArrayList<MenuItem> list = new ArrayList<MenuItem>();
-    		for(int i=1;i!=5;i++) {
+    		for(int i=0;i<5;i++) {
     			MenuItem p1=new MenuItem(MenuItem.itemType.Pizza, "Margherita", 3.0);
     			MenuItem p2=new MenuItem(MenuItem.itemType.Pizza, "Capricciosa", 5.5);
     			MenuItem p3=new MenuItem(MenuItem.itemType.Pizza, "Viennese", 4.0);
@@ -51,7 +51,7 @@ public class AppTest {
     {
     	try{
     		ArrayList<MenuItem> list = new ArrayList<MenuItem>();
-    		for(int i=1;i!=5;i++) {
+    		for(int i=0;i<5;i++) {
     			MenuItem p1=new MenuItem(MenuItem.itemType.Pizza, "Margherita", 3.0);
     			MenuItem p2=new MenuItem(MenuItem.itemType.Pizza, "Capricciosa", 5.5);
     			MenuItem p3=new MenuItem(MenuItem.itemType.Pizza, "Viennese", 4.0);
@@ -71,7 +71,7 @@ public class AppTest {
     {
     	try{
     		ArrayList<MenuItem> list = new ArrayList<MenuItem>();
-    		for(int i=1;i!=8;i++) {
+    		for(int i=0;i<8;i++) {
     			MenuItem k1=new MenuItem(MenuItem.itemType.Primo, "Pasta", 5.0);
     			MenuItem k2=new MenuItem(MenuItem.itemType.Primo, "Spaghetti", 4.5);
     			MenuItem k3=new MenuItem(MenuItem.itemType.Primo, "Lasagne", 7.5);
@@ -89,7 +89,7 @@ public class AppTest {
     {
     	try{
     		ArrayList<MenuItem> list = new ArrayList<MenuItem>();
-    		for(int i=1;i!=7;i++) {
+    		for(int i=0;i<7;i++) {
     			MenuItem p1=new MenuItem(MenuItem.itemType.Pizza, "Margherita", 3.0);
     			MenuItem p2=new MenuItem(MenuItem.itemType.Pizza, "Capricciosa", 5.5);
     			MenuItem p3=new MenuItem(MenuItem.itemType.Pizza, "Viennese", 4.0);
@@ -111,7 +111,7 @@ public class AppTest {
     {
     	try{
     		ArrayList<MenuItem> list = new ArrayList<MenuItem>();
-    		for(int i=1;i!=6;i++) {
+    		for(int i=0;i<6;i++) {
     			MenuItem p1=new MenuItem(MenuItem.itemType.Pizza, "Margherita", 5.0);
     			MenuItem p2=new MenuItem(MenuItem.itemType.Pizza, "Capricciosa", 5.5);
     			MenuItem p3=new MenuItem(MenuItem.itemType.Pizza, "Viennese", 7.5);
@@ -171,7 +171,7 @@ public class AppTest {
     {
     	try{
     		ArrayList<MenuItem> list = new ArrayList<MenuItem>();
-    		for(int i=1;i!=3;i++) {
+    		for(int i=0;i<3;i++) {
     			MenuItem p1=new MenuItem(MenuItem.itemType.Pizza, "Margherita", 3.0);
     			MenuItem p2=new MenuItem(MenuItem.itemType.Pizza, "Capricciosa", 5.5);
     			MenuItem p3=new MenuItem(MenuItem.itemType.Pizza, "Viennese", 4.0);
@@ -194,7 +194,7 @@ public class AppTest {
     {
     	try{
     		ArrayList<MenuItem> list = new ArrayList<MenuItem>();
-    		for(int i=1;i!=2;i++) {
+    		for(int i=0;i<2;i++) {
     			MenuItem p1=new MenuItem(MenuItem.itemType.Pizza, "Margherita", 3.0);
     			MenuItem p2=new MenuItem(MenuItem.itemType.Pizza, "Capricciosa", 5.5);
     			MenuItem p3=new MenuItem(MenuItem.itemType.Pizza, "Viennese", 4.0);
@@ -216,7 +216,7 @@ public class AppTest {
     {
     	try{
     		ArrayList<MenuItem> list = new ArrayList<MenuItem>();
-    		for(int i=1;i!=3;i++) {
+    		for(int i=0;i<3;i++) {
     			MenuItem p1=new MenuItem(MenuItem.itemType.Pizza, "Margherita", 3.0);
     			MenuItem p2=new MenuItem(MenuItem.itemType.Pizza, "Capricciosa", 5.5);
     			MenuItem p3=new MenuItem(MenuItem.itemType.Pizza, "Viennese", 4.0);
@@ -240,7 +240,7 @@ public class AppTest {
     {
     	try{
     		ArrayList<MenuItem> list = new ArrayList<MenuItem>();
-    		for(int i=1;i!=3;i++) {
+    		for(int i=0;i<3;i++) {
     			MenuItem k1=new MenuItem(MenuItem.itemType.Primo, "Pasta", 15.0);
     			MenuItem k2=new MenuItem(MenuItem.itemType.Primo, "Spaghetti", 14.5);
     			MenuItem k3=new MenuItem(MenuItem.itemType.Primo, "Lasagne", 17.5);
