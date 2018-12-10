@@ -19,7 +19,7 @@ public class AppTest {
     @Test
     public void SumOfPrice_EmptyList_Expected0Test()
     {
-	assertTrue(true);
+	assertEquals(6,6);
         //fail("Not yet implemented");
     }
 /*
