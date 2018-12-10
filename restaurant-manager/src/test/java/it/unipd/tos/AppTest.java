@@ -11,7 +11,7 @@ import junit.framework.TestSuite;
  * Unit test for simple App.
  */
 public class AppTest 
-    extends TestCase
+    //extends TestCase
 {
     /**
      * Create the test case
@@ -30,8 +30,8 @@ public class AppTest
     {
         return new TestSuite( AppTest.class );
     }
-    @Test
-    public void SumOfPrice_EmptyList_Expected0()
+
+    public void SumOfPrice_EmptyList_Expected0Test()
     {
 	assertTrue(true);
         //fail("Not yet implemented");
