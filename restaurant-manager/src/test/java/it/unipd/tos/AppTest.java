@@ -3,6 +3,7 @@
 ////////////////////////////////////////////////////////////////////
 package it.unipd.tos;
 
+import org.junit.Test;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
