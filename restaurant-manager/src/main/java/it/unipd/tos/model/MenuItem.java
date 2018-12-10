@@ -23,7 +23,7 @@ public itemType getType() {
 return type;
 }
 public String getName() {
-return name;	
+return name;
 }
 public double getPrice() {
 return price;
