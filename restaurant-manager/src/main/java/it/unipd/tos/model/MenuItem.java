@@ -22,9 +22,6 @@ this.price=0.0;
 public itemType getType() {
 return type;
 }
-public String getName() {
-return name;
-}
 public double getPrice() {
 return price;
 }
