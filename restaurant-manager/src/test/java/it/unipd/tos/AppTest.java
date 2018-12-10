@@ -30,7 +30,7 @@ public class AppTest
     {
         return new TestSuite( AppTest.class );
     }
-
+    @Test
     public void SumOfPrice_EmptyList_Expected0()
     {
 	assertTrue(true);
