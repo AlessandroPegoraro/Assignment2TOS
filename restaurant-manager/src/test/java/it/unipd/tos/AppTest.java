@@ -3,9 +3,14 @@
 ////////////////////////////////////////////////////////////////////
 package it.unipd.tos;
 
-import junit.framework.Test; 
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+/*import junit.framework.Test; 
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+*/
 
 /**
  * Unit test for simple App.
