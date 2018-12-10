@@ -4,7 +4,7 @@
 package it.unipd.tos.model;
 
 public class MenuItem {
-private enum itemType{
+static public enum itemType{
 Pizza, Primo
 }
 public itemType type;
@@ -19,14 +19,8 @@ this.price=prezzo;
 this.price=0.0;
 }
 }
-public int getType() {
-if(type==itemType.Pizza)
-{
-	return 0;
-}else
-{
-	return 1;
-}
+public itemType getType() {
+return type;
 }
 public String getName() {
 return name;

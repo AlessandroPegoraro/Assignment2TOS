@@ -14,13 +14,13 @@ public class App implements RestaurantBill
     {
 	if(itemsOrdered.size()>20)
         {
-             throw new RestaurantBillException("Numero di Ordinazioni maggiore di 20 Elementi");
+             throw new RestaurantBillException("Ordinazione Fallita");
         }
         int sumPizze=0;
 	double minPrice=-1.0;
 	for(int i=0;i<itemsOrdered.size();i++)
         {
-        	if(itemsOrdered.get(i).getType()==0)
+        	if(itemsOrdered.get(i).getType()==MenuItem.itemType.Pizza)
             	{
                 	sumPizze++;
 			if(itemsOrdered.get(i).getPrice()<minPrice || minPrice<0.0)
@@ -32,11 +32,14 @@ public class App implements RestaurantBill
 	double totalPrice=0.0;
 		for(int i=0;i<itemsOrdered.size();i++)
         {
-		if(sumPizze>10 && itemsOrdered.get(i).getType()==0)
+		if(sumPizze>10 && itemsOrdered.get(i).getType()==MenuItem.itemType.Pizza)
 		{
 			if(itemsOrdered.get(i).getPrice()!=minPrice)
 			{
 				totalPrice+=itemsOrdered.get(i).getPrice();
+			}else
+			{
+				minPrice=0.0;//Elimino il prezzo di una sola pizza
 			}
 		}else
 		{
