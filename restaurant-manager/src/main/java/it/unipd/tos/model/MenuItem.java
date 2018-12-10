@@ -19,8 +19,14 @@ this.price=prezzo;
 this.price=0.0;
 }
 }
-public itemType getType() {
-return type;
+public int getType() {
+if(type==itemType.Pizza)
+{
+	return 0;
+}else
+{
+	return 1;
+}
 }
 public String getName() {
 return name;

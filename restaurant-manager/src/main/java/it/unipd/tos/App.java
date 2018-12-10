@@ -2,6 +2,10 @@
 // Alessandro Pegoraro 1143562
 ////////////////////////////////////////////////////////////////////
 package it.unipd.tos;
+import it.unipd.tos.business.RestaurantBill;
+import it.unipd.tos.business.exception.RestaurantBillException;
+import it.unipd.tos.model.MenuItem;
+import java.util.List;
 
 public class App implements RestaurantBill
 {
@@ -14,19 +18,19 @@ public class App implements RestaurantBill
         }
         int sumPizze=0;
 	double minPrice=-1.0;
-	for(int i:itemsOrdered.size())
+	for(int i=0;i<itemsOrdered.size();i++)
         {
         	if(itemsOrdered.get(i).getType()==0)
             	{
                 	sumPizze++;
 			if(itemsOrdered.get(i).getPrice()<minPrice || minPrice<0.0)
                         {
-				minPrice=itemsOrdered.get(i).getPrice;
+				minPrice=itemsOrdered.get(i).getPrice();
                         }
 		}
         }
 	double totalPrice=0.0;
-        for(int i:itemsOrdered.size())
+		for(int i=0;i<itemsOrdered.size();i++)
         {
 		if(sumPizze>10 && itemsOrdered.get(i).getType()==0)
 		{
