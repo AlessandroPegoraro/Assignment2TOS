@@ -27,17 +27,41 @@ public class AppTest {
 
 
 	@Test
-	public void TestOfList_ListWithPizzaAndPrimo_NameAndTypeOfEachElements()
+	public void TestOfType_ListWithPizza_TypeOfPizza()
 	{
 		ArrayList<MenuItem> list = new ArrayList<MenuItem>();
 		MenuItem p1=new MenuItem(MenuItem.itemType.Pizza, "Margherita", 3.0);
-		MenuItem k1=new MenuItem(MenuItem.itemType.Primo, "Pasta", 5.0);
-		list.add(p1); list.add(k1);
-		assertEquals("MargheritaPasta",list.get(0).getName()+list.get(1).getName());
+		list.add(p1);
 		assertEquals(MenuItem.itemType.Pizza,list.get(0).getType());
-		assertEquals(MenuItem.itemType.Primo,list.get(1).getType());
+	}
+
+        @Test
+	public void TestOfType_ListWithPrimo_TypeOfPrimo()
+	{
+		ArrayList<MenuItem> list = new ArrayList<MenuItem>();
+		MenuItem k1=new MenuItem(MenuItem.itemType.Primo, "Pasta", 5.0);
+		list.add(k1);
+		assertEquals(MenuItem.itemType.Primo,list.get(0).getType());
 	}
     
+	@Test
+	public void TestOfName_ListWithPizza_NameOfPizza()
+	{
+		ArrayList<MenuItem> list = new ArrayList<MenuItem>();
+		MenuItem p1=new MenuItem(MenuItem.itemType.Pizza, "Margherita", 3.0);
+		list.add(p1);
+		assertEquals("Margherita",list.get(0).getName());
+	}
+
+        @Test
+	public void TestOfName_ListWithPrimo_NameOfPrimo()
+	{
+		ArrayList<MenuItem> list = new ArrayList<MenuItem>();
+		MenuItem k1=new MenuItem(MenuItem.itemType.Primo, "Pasta", 5.0);
+		list.add(k1);
+		assertEquals("Pasta",list.get(0).getName());
+	}
+
     @Test
     public void SumOfPrice_MoreThan20Elements_RestaurantBillExceptionThrown()// 15 15
     {
